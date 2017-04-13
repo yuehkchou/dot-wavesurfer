@@ -13,5 +13,10 @@
     "waveform"
   ],
   "author": "Yueh Chou",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "^16.1.1",
+    "inert": "^4.2.0",
+    "path": "^0.12.7"
+  }
 }
