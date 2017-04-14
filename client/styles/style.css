@@ -17,10 +17,9 @@ h1,h2,h3,h4,h5,h6 {
   margin: auto;
   width: 85%;
   height: 100%;
-  padding: 10px;
 }
 .content {
-height: 100%;
+  height: 100%;
 }
 header {
   color: rgb(180,180,180);
@@ -58,8 +57,39 @@ button {
   border: 0px;
 }
 section {
-  height:100%;
-  background-image: url('/assets/music_bg.jpg');
+  height: 100%;
+  background:
+  linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.35)
+    ),
+  url('/assets/music_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wavesurfer-grid {
+  padding: 5%;
+  /*height: 100%;*/
+  background: #fff;
+}
+#section-title {
+  text-align: center;
+}
+#section-desc {
+  font-size: 14px;
+}
+.row {
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.section-col-4 {
+  display: inline-block;
+  float: left;
+  text-align: center;
+  width: 25%;
+  margin: auto;
 }
 footer {
   color: rgb(180,180,180);

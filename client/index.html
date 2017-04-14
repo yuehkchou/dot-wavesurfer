@@ -35,30 +35,54 @@
   <div class="content">
     <section>
       <div class="container">
-        <h1>Welcome to Noire Sound</h1>
-        <hr />
-        <p>This is a place for music</p>
         <!-- Start WaveSurfer -->
-        <div id="waveform"></div>
-        <div style="text-align: center">
-          <button class="btn btn-primary" onclick="wavesurfer.playPause()">
-            <i class="glyphicon glyphicon-play"></i>
-            Play
-          </button>
-          <p class="row">
-            <div class="col-xs-1">
-              <i class="glyphicon glyphicon-zoom-in"></i>
-            </div>
-            <div class="col-xs-10">
-              <input id="slider" type="range" min="1" max="200" value="1" style="width: 100%" />
-            </div>
-            <div class="col-xs-1">
-              <i class="glyphicon glyphicon-zoom-out"></i>
-            </div>
-          </p>
+        <div class="wavesurfer-grid">
+          <h1>Welcome to Noire Sound</h1>
+          <hr />
+          <p>This is a place for music</p>
+          <div id="waveform"></div>
+          <div style="text-align: center">
+            <button class="btn btn-primary" onclick="wavesurfer.playPause()">
+              <i class="glyphicon glyphicon-play"></i>
+              Play
+            </button>
+            <p class="row">
+              <div class="col-xs-1">
+                <i class="glyphicon glyphicon-zoom-in"></i>
+              </div>
+              <div class="col-xs-10">
+                <input id="slider" type="range" min="1" max="200" value="1" style="width: 100%" />
+              </div>
+              <div class="col-xs-1">
+                <i class="glyphicon glyphicon-zoom-out"></i>
+              </div>
+            </p>
+          </div>
+          <br />
+          <h2 id="section-title">Surfing on Music</h2>
+          <div class="section-info">
+            <ul class="row">
+              <li class="section-col-4">
+                <h3>Breaking Down the Sound</h3>
+                <p>Help analyze sound wave</p>
+              </li>
+              <li class="section-col-4">
+                <h3>Customizing Music</h3>
+                <p>Pick specific music genere</p>
+              </li>
+              <li class="section-col-4">
+                <h3>Better Communication</h3>
+                <p>Quick response time and feedback on your project</p>
+              </li>
+              <li class="section-col-4">
+                <h3>Financing your music career</h3>
+                <p>3% Royalty Fee on Music Feedback</p>
+              </li>
+            </ul>
+          </div>
         </div>
         <!-- End WaveSurfer -->
-      </div>
+      </div> <!-- End of Container -->
     </section>
   </div>
   <!-- End Section -->
@@ -66,8 +90,18 @@
   <footer>
     <div class="container">
       <h3 id="footer-title">Footer Content</h3>
+      <div class="footer-content">
+        <div class="footer-list">
+          <ul>
+            <li>About Us</li>
+            <li>Customer FAQ</li>
+            <li>Contact Us</li>
+            <li>Term & Condition</li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <hr />
   </footer>
     <!-- End Footer -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
