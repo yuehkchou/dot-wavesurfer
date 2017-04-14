@@ -33,61 +33,82 @@
   <!-- End Header -->
   <!-- Begin Section -->
   <div class="content">
-    <section>
-      <div class="container">
-        <!-- Start WaveSurfer -->
-        <div class="wavesurfer-grid">
-          <h1>Welcome to Noire Sound</h1>
-          <hr />
-          <p>This is a place for music</p>
-          <div id="waveform"></div>
-          <div style="text-align: center">
-            <button class="btn btn-primary" onclick="wavesurfer.playPause()">
-              <i class="glyphicon glyphicon-play"></i>
-              Play
-            </button>
-            <p class="row">
-              <div class="col-xs-1">
-                <i class="glyphicon glyphicon-zoom-in"></i>
+    <div class="bg">
+      <section>
+        <div class="container">
+          <!-- Start WaveSurfer -->
+          <div class="wavesurfer-grid">
+            <h1>Welcome to Noire Sound</h1>
+            <hr />
+            <p>This is a place for music</p>
+            <div id="waveform"></div>
+            <div style="text-align: center">
+              <button class="btn btn-primary" onclick="wavesurfer.playPause()">
+                <i class="glyphicon glyphicon-play"></i>
+                Play
+              </button>
+              <div class="wave-row">
+                <div class="col-xs-1">
+                  <i class="glyphicon glyphicon-zoom-in"></i>
+                </div>
+                <div class="col-xs-10">
+                  <input id="slider" type="range" min="1" max="200" value="1" style="width: 100%" />
+                </div>
+                <div class="col-xs-1">
+                  <i class="glyphicon glyphicon-zoom-out"></i>
+                </div>
               </div>
-              <div class="col-xs-10">
-                <input id="slider" type="range" min="1" max="200" value="1" style="width: 100%" />
-              </div>
-              <div class="col-xs-1">
-                <i class="glyphicon glyphicon-zoom-out"></i>
-              </div>
+            </div>
+            <br />
+            <h2 id="section-title">Surfing on Music</h2>
+            <div class="section-info">
+              <ul class="row">
+                <li class="section-col-4">
+                  <img class="icon" alt="img" src="/assets/idea.png" />
+                  <h3>Breaking Down the Sound</h3>
+                  <p>Help analyze sound wave</p>
+                </li>
+                <li class="section-col-4">
+                  <img class="icon" alt="img" src="/assets/rocket.png" />
+                  <h3>Customizing Music</h3>
+                  <p>Pick specific music genere</p>
+                </li>
+                <li class="section-col-4">
+                  <img class="icon" alt="img" src="/assets/people.png" />
+                  <h3>Better Communication</h3>
+                  <p>Quick response time and feedback on your project</p>
+                </li>
+                <li class="section-col-4">
+                  <img class="icon" alt="img" src="/assets/plane.png" />
+                  <h3>Financing your music career</h3>
+                  <p>3% Royalty Fee on Music Feedback</p>
+                </li>
+              </ul>
+            </div>
+            <hr />
+            <p id="section-word">
+              Lorem ipsum dolor sit amet, nam elitr menandri ea.
+              No quod ullum omnesque nec. Alii dolor ad vel. Ut suscipit honestatis nec,
+              duo et enim pertinax maluisset, commodo docendi ad mei. Eam in putent nominavi consulatu.
+              No per ornatus detracto suavitate, perpetua assueverit eum te, his stet tollit euismod et.
             </p>
           </div>
-          <br />
-          <h2 id="section-title">Surfing on Music</h2>
-          <div class="section-info">
-            <ul class="row">
-              <li class="section-col-4">
-                <img class="icon" src="/assets/idea.png" />
-                <h3>Breaking Down the Sound</h3>
-                <p>Help analyze sound wave</p>
-              </li>
-              <li class="section-col-4">
-                <img class="icon" src="/assets/rocket.png" />
-                <h3>Customizing Music</h3>
-                <p>Pick specific music genere</p>
-              </li>
-              <li class="section-col-4">
-                <img class="icon" src="/assets/people.png" />
-                <h3>Better Communication</h3>
-                <p>Quick response time and feedback on your project</p>
-              </li>
-              <li class="section-col-4">
-                <img class="icon" src="/assets/plane.png" />
-                <h3>Financing your music career</h3>
-                <p>3% Royalty Fee on Music Feedback</p>
-              </li>
-            </ul>
+          <!-- End WaveSurfer -->
+          <div class="section-article">
+            <div class="section-col-2">
+              <div>
+                <h2>This is the new location</h2>
+                <p> Where are most of this item</p>
+              </div>
+              <div>
+                <h2>Come check us out at</h2>
+                <p> Here at the following locations</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <!-- End WaveSurfer -->
-      </div> <!-- End of Container -->
-    </section>
+        </div> <!-- End of Container -->
+      </section>
+    </div>
   </div>
   <!-- End Section -->
   <!-- Begin Footer -->
@@ -100,8 +121,11 @@
             <li>About Us</li>
             <li>Customer FAQ</li>
             <li>Contact Us</li>
+          </ul>
+          <ul>
             <li>Term & Condition</li>
-            <li></li>
+            <li>Tutorials</li>
+            <li>Careers</li>
           </ul>
         </div>
       </div>
