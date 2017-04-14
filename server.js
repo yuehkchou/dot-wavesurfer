@@ -46,8 +46,17 @@ server.register(require('inert'), (err) => {
       reply.file('./client/styles/style.css')
     }
   })
+  // Path to Assets
+  server.route({
+    method: 'GET',
+    path: '/assets/{file*}',
+    handler: {
+      directory: {
+        path: './client/assets'
+      }
+    }
+  });
 });
-
 // Start server
 server.start((err) => {
   if(err) throw err;

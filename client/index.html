@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Noire Sound</title>
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
     <link href="./styles/style.css" rel="stylesheet" type="text/css" />
   </head>
@@ -37,6 +38,7 @@
         <h1>Welcome to Noire Sound</h1>
         <hr />
         <p>This is a place for music</p>
+        <!-- Start WaveSurfer -->
         <div id="waveform"></div>
         <div style="text-align: center">
           <button class="btn btn-primary" onclick="wavesurfer.playPause()">
@@ -47,16 +49,15 @@
             <div class="col-xs-1">
               <i class="glyphicon glyphicon-zoom-in"></i>
             </div>
-
             <div class="col-xs-10">
               <input id="slider" type="range" min="1" max="200" value="1" style="width: 100%" />
             </div>
-
             <div class="col-xs-1">
               <i class="glyphicon glyphicon-zoom-out"></i>
             </div>
           </p>
         </div>
+        <!-- End WaveSurfer -->
       </div>
     </section>
   </div>
