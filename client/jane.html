@@ -8,21 +8,63 @@
     <link href="./styles/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <!-- Begin Header -->
-    <header>
-    <div class="container">
 
-    </div>
-  </header>
-    <!-- End Header -->
     <!-- Begin Section -->
     <div class="content">
-      <section>
+      <article>
         <div class="container">
-          This is section
           <h2>Welcome to Noire Sound</h2>
           <hr />
           <p>This is a place for music</p>
+          <div class="article-main" />
+            <div class="article-3">
+              <div class="row">
+                <div class="profile">
+                  <img id="profile-pic" src="/assets/jane.png" alt="jane" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="profile-detail">
+                  <h2 id="profile-name">Jane</h2>
+                  <ul>
+                    <li id="genre"><b>Genre:</b> Rock </li>
+                    <li id="band"><b>Band:</b> IceCube</li>
+                    <li id="interest"><b>Interests:</b> sing, cook, movie</li>
+                    <hr />
+                    <li id="description">
+                       I’m a working musician from Seattle, Wa.
+                       I have been making my living in the music industry for 20 years.
+                       For the last eight years the majority of my income has come from playing live music.
+                       I lead The Jason Parker Quartet, one of the busiest jazz bands in Seattle,
+                       and play in a host of other bands, including Clave Nagila, Water Babies,
+                       The Nate Omdal Nonet and more. I have toured with Crooked Fingers and Devotchka,
+                       and have opened for the likes of Elvis Costello,
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="article-7">
+              <div class="article-player">
+                <ul class="audio-th">
+                  <li>
+                    Soundtrack
+                  </li>
+                  <li>
+                    name
+                  </li>
+                  <li>
+                    length
+                  </li>
+                </ul>
+                <ul class="audio-td">
+                  <li>#1</li>
+                  <li>test1</li>
+                  <li>3:04</li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <div id="waveform"></div>
           <div style="text-align: center">
             <button class="btn btn-primary" onclick="wavesurfer.playPause()">
@@ -43,17 +85,11 @@
               </div>
             </p>
           </div>
-        </div>
-      </section>
+        <div>
+      </article>
     </div>
-      <!-- End Section -->
-      <!-- Begin Footer -->
-    <footer>
-      <div class="container">
-        this is footer
-      </div>
-    </footer>
-    <!-- End Footer -->
+      <!-- End Article -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.2.3/wavesurfer.min.js"></script>
     <script src="./scripts/index.js"></script>

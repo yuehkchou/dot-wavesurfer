@@ -149,3 +149,39 @@ footer {
   /*width: 8%;*/
   padding:10px;
 }
+
+/*Page for Jane*/
+.article-main {
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+.article-3 {
+  width: 30%;
+  border-style: solid;
+  border-color: red;
+  border-width: 5px;
+}
+.article-7 {
+  width: 70%;
+  border-style: solid;
+  border-color: blue;
+  border-width: 5px;
+}
+.profile-detail {
+  text-align: left;
+}
+#profile-pic {
+  width: 50%;
+  height: auto;
+}
+.audio-list {
+  display: inline-flex;
+}
+.audio-th {
+  display: flex;
+  flex-flow: column;
+}
+.audio-td {
+
+}
