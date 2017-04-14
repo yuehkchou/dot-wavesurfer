@@ -74,6 +74,7 @@ section {
 }
 #section-title {
   text-align: center;
+  padding-bottom: 3%;
 }
 #section-desc {
   font-size: 14px;
@@ -90,6 +91,10 @@ section {
   text-align: center;
   width: 25%;
   margin: auto;
+}
+.icon {
+  max-width: 30%;
+  height: auto;
 }
 footer {
   color: rgb(180,180,180);
