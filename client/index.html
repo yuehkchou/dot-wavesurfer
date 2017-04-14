@@ -4,10 +4,73 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Noire Sound</title>
-    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+    <link href="./styles/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h2>Welcome to Noire Sound</h2>
-    <p>This is a place for music</p>
+    <!-- Begin Header -->
+    <header>
+    <div class="container">
+      <div class="header-menu">
+        <div class="header-logo">
+          <h3>Noire Sound</h3>
+        </div>
+        <div class="header-list">
+          <ul>
+            <li>About</li>
+            <li>Team</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="header-oauth">
+          <button>Sign In</button>
+          <button>Sign Out</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+  <!-- Begin Section -->
+  <div class="content">
+    <section>
+      <div class="container">
+        <h1>Welcome to Noire Sound</h1>
+        <hr />
+        <p>This is a place for music</p>
+        <div id="waveform"></div>
+        <div style="text-align: center">
+          <button class="btn btn-primary" onclick="wavesurfer.playPause()">
+            <i class="glyphicon glyphicon-play"></i>
+            Play
+          </button>
+          <p class="row">
+            <div class="col-xs-1">
+              <i class="glyphicon glyphicon-zoom-in"></i>
+            </div>
+
+            <div class="col-xs-10">
+              <input id="slider" type="range" min="1" max="200" value="1" style="width: 100%" />
+            </div>
+
+            <div class="col-xs-1">
+              <i class="glyphicon glyphicon-zoom-out"></i>
+            </div>
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- End Section -->
+  <!-- Begin Footer -->
+  <footer>
+    <div class="container">
+      <h3 id="footer-title">Footer Content</h3>
+    </div>
+    <hr />
+  </footer>
+    <!-- End Footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.2.3/wavesurfer.min.js"></script>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
