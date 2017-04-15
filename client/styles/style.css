@@ -167,6 +167,10 @@ footer {
   border-style: solid;
   border-color: blue;
   border-width: 5px;
+  display: -webkit-flex;
+     display: flex;
+     -webkit-flex-direction: column;
+     flex-direction: column;
 }
 .profile-detail {
   text-align: left;
@@ -175,13 +179,34 @@ footer {
   width: 50%;
   height: auto;
 }
-.audio-list {
-  display: inline-flex;
+.article-list {
+  height: 86%;
+}
+.article-player {
+  background: #333;
+  height: 15%;
+  width: 100%;
 }
 .audio-th {
+  margin:0px;
+  padding: 0px;
+  color: #fff;
+  background: #000;
+  list-style: none;
   display: flex;
-  flex-flow: column;
+  justify-content: space-around;
+  width: 100%;
+  /*flex-direction: row;*/
 }
 .audio-td {
-
+  margin:0px;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.audio-player-ctrl {
+  position: relative;
+  bottom: 0px;
 }
