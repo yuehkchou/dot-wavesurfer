@@ -8,7 +8,7 @@ const server = new Hapi.Server();
 
 let port = process.env.PORT || 4800
 // Server Port Listener
-server.connection({ port: port, host: 'localhost' });
+server.connection({ port: 4800, host: 'localhost' });
 
 // Server Routing
 server.register(require('inert'), (err) => {
