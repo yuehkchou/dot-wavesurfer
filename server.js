@@ -6,8 +6,7 @@ const Inert = require('inert');
 // Creating Server
 const server = new Hapi.Server();
 
-// Server Port Listener
-server.connection({ port: 4800, host: 'localhost' });
+let port = process.env.PORT || 4800
 
 // Server Routing
 server.register(require('inert'), (err) => {
@@ -62,3 +61,6 @@ server.start((err) => {
   if(err) throw err;
   console.log(`Server running at ${server.info.uri}`)
 })
+
+// Server Port Listener
+server.connection({ port: port, host: 'localhost' });
