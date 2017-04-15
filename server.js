@@ -3,13 +3,10 @@ const Path = require('path');
 const Hapi = require('hapi');
 const Inert = require('inert');
 
+var port = +process.env.PORT || 4800
 // Creating Server
 const server = new Hapi.Server();
-
-let port = process.env.PORT || 4800
-// Server Port Listener
-server.connection({ port: 4800, host: 'localhost' });
-
+server.connection({ port: port, host: 'localhost' });
 // Server Routing
 server.register(require('inert'), (err) => {
   if(err) throw err;
@@ -57,9 +54,9 @@ server.register(require('inert'), (err) => {
       }
     }
   });
+  // Start server
+  server.start((err) => {
+    if(err) throw err;
+    console.log(`Server running at ${server.info.uri}`)
+  })
 });
-// Start server
-server.start((err) => {
-  if(err) throw err;
-  console.log(`Server running at ${server.info.uri}`)
-})
