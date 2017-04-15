@@ -27,10 +27,6 @@ hr {
 .container {
   margin: auto;
   width: 85%;
-  /*height: 100%;*/
-}
-.content {
-  /*height: 100%;*/
 }
 header {
   color: rgb(180,180,180);
@@ -71,6 +67,7 @@ section {
   height: 100%;
 }
 .bg {
+  height: 100%;
   background:
   linear-gradient(
       rgba(0, 0, 0, 0.35),
@@ -151,16 +148,28 @@ footer {
 }
 
 /*Page for Jane*/
+article {
+  color: #ddd;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 .article-main {
   display: flex;
   width: 100%;
   text-align: center;
 }
+.article-waveform {
+  background: #fff;
+}
 .article-3 {
+  color: #333;
   width: 30%;
   border-style: solid;
   border-color: red;
   border-width: 5px;
+  background: #ddd;
 }
 .article-7 {
   width: 70%;
@@ -174,8 +183,17 @@ footer {
 }
 .profile-detail {
   text-align: left;
+  padding: 10px;
+}
+.profile-detail ul {
+  list-style: none;
+  padding: 5px;
+}
+#profile-name {
+  padding: 10px;
 }
 #profile-pic {
+  margin: 15px;
   width: 50%;
   height: auto;
 }

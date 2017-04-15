@@ -1,12 +1,10 @@
+// Initializing wavesurfer
 var wavesurfer = WaveSurfer.create({
   container: '#waveform',
   waveColor: 'volet',
   progressColor: 'purple',
   scrollParent: true
 })
-
-// wavesurfer.load('https://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
-
 // Establish WaveList , should contain object of music;
 // Music Load
 let musicPlayer = [];
@@ -31,18 +29,18 @@ const loadSongs = (playlist) => {
     articleUL.appendChild(len);
     articleList.appendChild(articleUL);
   })
-
-  // total length of the player after loading
-  let totalSongs = articleList.length;
-  console.log(articleList)
 }
 // EventListener
 // When song finish playing
 wavesurfer.on('ready', () => {
   console.log('wave surfer ready')
+  let currSong = document.getElementById('article-list');
+  currSong.childNodes[currIndex].setAttribute('style', "font-weight: bold; background: blue;" )
 })
 // Once Finish Index Increases, Play Next Music
 wavesurfer.on('finish', () => {
+  let currSong = document.getElementById('article-list');
+  currSong.childNodes[currIndex].setAttribute('style', "font-weight: 400; background: none;" )
   currIndex += 1
   wavesurfer.load(musicPlayer[currIndex])
 })
@@ -51,7 +49,6 @@ wavesurfer.on('error', (err) => {
   console.log(err);
 })
 var slider = document.querySelector('#slider');
-
 slider.oninput = function() {
   var zoomLevel = Number(slider.value);
   wavesurfer.zoom(zoomLevel)

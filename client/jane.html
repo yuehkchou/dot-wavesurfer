@@ -10,9 +10,9 @@
   <body>
 
     <!-- Begin Section -->
+    <div class="bg">
     <div class="content">
       <article>
-
         <div class="container">
           <h2>Welcome to Noire Sound</h2>
           <hr />
@@ -58,13 +58,9 @@
                     length
                   </li>
                 </ul>
-                <ul id="audio-td" class="audio-td">
-                  <li>#1</li>
-                  <li>test1</li>
-                  <li>3:04</li>
-                </ul>
-              </div>
-              <div id="article-list" class="article-list">
+                <!-- Music Will be Loaded Start -->
+                <div id="article-list" class="article-list"></div>
+                <!-- Music Will be Loaded End -->
               </div>
               <div class="article-player">
                 <ul class="audio-player-ctrl">
@@ -76,29 +72,32 @@
               </div>
             </div>
           </div>
-          <div id="waveform"></div>
-          <div style="text-align: center">
-            <button class="btn btn-primary" onclick="wavesurfer.playPause()">
-              <i class="glyphicon glyphicon-play"></i>
-              Play
-            </button>
-            <p class="row">
-              <div class="col-xs-1">
-                <i class="glyphicon glyphicon-zoom-in"></i>
-              </div>
-
-              <div class="col-xs-10">
-                <input id="slider" type="range" min="1" max="200" value="1" style="width: 100%" />
-              </div>
-
-              <div class="col-xs-1">
-                <i class="glyphicon glyphicon-zoom-out"></i>
-              </div>
-            </p>
+          <!-- Waveform starts here -->
+          <div class="article-waveform">
+            <div id="waveform"></div>
+            <div style="text-align: center">
+              <button class="btn btn-primary" onclick="wavesurfer.playPause()">
+                <i class="glyphicon glyphicon-play"></i>
+                Play
+              </button>
+              <p class="row">
+                <div class="col-xs-1">
+                  <i class="glyphicon glyphicon-zoom-in"></i>
+                </div>
+                <div class="col-xs-10">
+                  <input id="slider" type="range" min="1" max="200" value="1" style="width: 100%" />
+                </div>
+                <div class="col-xs-1">
+                  <i class="glyphicon glyphicon-zoom-out"></i>
+                </div>
+              </p>
+            </div>
           </div>
+          <!-- waveform Ends -->
         <div>
       </article>
     </div>
+  </div>
       <!-- End Article -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.2.3/wavesurfer.min.js"></script>
