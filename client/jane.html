@@ -58,19 +58,20 @@
                     length
                   </li>
                 </ul>
-                <ul class="audio-td">
+                <ul id="audio-td" class="audio-td">
                   <li>#1</li>
                   <li>test1</li>
                   <li>3:04</li>
                 </ul>
               </div>
+              <div id="article-list" class="article-list">
+              </div>
               <div class="article-player">
                 <ul class="audio-player-ctrl">
-                  <button>Play</button>
-                  <button>Pause</button>
-                  <button>Mute</button>
-                  <button>Fast Forward</button>
-
+                  <button onclick="wavesurfer.playPause()">Play | Pause </button>
+                  <button onclick="wavesurfer.stop()">Stop</button>
+                  <button onclick="wavesurfer.toggleMute()">Mute</button>
+                  <button onclick="wavesurfer.skipForward()">Fast Forward</button>
                 </ul>
               </div>
             </div>
@@ -99,9 +100,15 @@
       </article>
     </div>
       <!-- End Article -->
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.2.3/wavesurfer.min.js"></script>
+    <script src="./scripts/music.json"></script>
     <script src="./scripts/index.js"></script>
+    <script>
+    $( document ).ready(function() {
+       console.log( "ready!" );
+       loadSongs(output)
+    });
+    </script>
   </body>
 </html>

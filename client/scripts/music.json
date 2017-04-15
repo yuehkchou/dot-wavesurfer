@@ -1,0 +1,21 @@
+var output = [{
+    "songURL": "https://ia800407.us.archive.org/4/items/HJATP2016-05-29.HayleyJaneandthePrimatesStrangeCreekMusicFestival/01DayDream.mp3",
+    "title": "DayDream",
+    "duration": "4:06"
+  },
+  {
+    "songURL": "https://ia800407.us.archive.org/4/items/HJATP2016-05-29.HayleyJaneandthePrimatesStrangeCreekMusicFestival/02IKnowThatICanDoIt.mp3",
+    "title": "I Know That I Can Dolt",
+    "duration": "5:48"
+  },
+  {
+    "songURL": "https://ia800407.us.archive.org/4/items/HJATP2016-05-29.HayleyJaneandthePrimatesStrangeCreekMusicFestival/03HeartsOnFire.mp3",
+    "title": "Hearts on Fire",
+    "duration": "3:39"
+  },
+  {
+    "songURL": "https://ia800407.us.archive.org/4/items/HJATP2016-05-29.HayleyJaneandthePrimatesStrangeCreekMusicFestival/05EyeOfTheStorm.mp3",
+    "title": "Eyes of the Storm",
+    "duration": "2:56"
+  }
+]

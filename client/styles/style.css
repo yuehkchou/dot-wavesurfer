@@ -186,9 +186,10 @@ footer {
   background: #333;
   height: 15%;
   width: 100%;
+  vertical-align: middle;
 }
 .audio-th {
-  margin:0px;
+  margin: 0px;
   padding: 0px;
   color: #fff;
   background: #000;
@@ -199,12 +200,15 @@ footer {
   /*flex-direction: row;*/
 }
 .audio-td {
-  margin:0px;
+  margin: 0px;
   padding: 0px;
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
+}
+.audio-td li {
 }
 .audio-player-ctrl {
   position: relative;
