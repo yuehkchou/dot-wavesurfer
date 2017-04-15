@@ -5,7 +5,7 @@ var wavesurfer = WaveSurfer.create({
   scrollParent: true
 })
 
-wavesurfer.load('https://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
+// wavesurfer.load('https://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
 
 // Establish WaveList , should contain object of music;
 // Music Load
@@ -40,11 +40,11 @@ const loadSongs = (playlist) => {
 // When song finish playing
 wavesurfer.on('ready', () => {
   console.log('wave surfer ready')
-  wavesurfer.load(musicPlayer[currIndex])
 })
+// Once Finish Index Increases, Play Next Music
 wavesurfer.on('finish', () => {
-  if(currIndex)
-  wavesurfer.load(musicPlayer[currIndex + 1])
+  currIndex += 1
+  wavesurfer.load(musicPlayer[currIndex])
 })
 // If an Error Occurs
 wavesurfer.on('error', (err) => {
